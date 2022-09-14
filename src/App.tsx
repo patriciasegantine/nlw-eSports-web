@@ -1,12 +1,16 @@
-import { useState } from 'react'
+import {LandingPage} from './views/landing-page/landing-page';
+import {GlobalStyle} from './global.styles'
+import {defaultTheme} from './themes/defaultTheme';
+import {ThemeProvider} from 'styled-components';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      Hello World!
-    </>
+
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle/>
+      <LandingPage/>
+    </ThemeProvider>
   )
 }
 

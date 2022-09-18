@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Button} from '../../global.styles';
+import * as Dialog from '@radix-ui/react-dialog';
 
 export const AddComment = styled.div`
   display: flex;
@@ -41,11 +42,24 @@ export const AddCommentItem = styled.div`
   }
 `
 
-export const ButtonBanner = styled(Button)`
+export const ButtonBanner = styled(Dialog.Trigger)`
   color: ${({theme}) => theme.white};
   background: ${({theme}) => theme['violet-500']};
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  
+  padding: .6rem 1rem ;
+  border: none;
+  border-radius: 6px;
+  
+  cursor: pointer;
   
   &:hover {
     background: ${({theme}) => theme['violet-600']};
   }
 `
+
+

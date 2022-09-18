@@ -5,6 +5,7 @@ import {LinkGames} from '../../components/link-games/link-games';
 import {CreateBanner} from '../../components/create-banner/create-banner';
 import {useEffect, useState} from 'react';
 import {BannerModal} from '../../api/banner-modal';
+import * as Dialog from '@radix-ui/react-dialog';
 
 interface Game {
   id: string
@@ -63,13 +64,18 @@ export const LandingPage = () => {
           })}
         </SliderContainer>
 
-        <CreateBanner onClick={handleOnAddComment}/>
 
-        {addComment &&
-          <BannerModal
-          onClick={handleClick}
-          onCLose={handleOnAddComment}
-          />}
+        <Dialog.Root>
+          <CreateBanner />
+
+          <Dialog.Portal>
+             <BannerModal/>
+          </Dialog.Portal>
+        </Dialog.Root>
+
+        {/* {addComment && */}
+        {/*   <BannerModal */}
+        {/*   />} */}
 
       </GlobalContainer>
     </LandingPageContainer>

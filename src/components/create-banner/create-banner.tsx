@@ -1,8 +1,8 @@
 import {MagnifyingGlassPlus} from 'phosphor-react';
 import {AddComment, AddCommentItem, ButtonBanner,} from './create-banner.styles';
+import {BannerModal} from '../../api/banner-modal';
 
-// @ts-ignore
-export const CreateBanner = ({onClick}) => {
+export const CreateBanner = () => {
 
 
   return (
@@ -13,7 +13,7 @@ export const CreateBanner = ({onClick}) => {
           <p>Publique um anúncio para encontrar novos players!</p>
         </AddCommentItem>
 
-        <ButtonBanner onClick={onClick}>
+        <ButtonBanner >
           <MagnifyingGlassPlus size={20} />
           Add Comment
         </ButtonBanner>

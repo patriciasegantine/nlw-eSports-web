@@ -3,7 +3,9 @@ import {GlobalStyle} from './global.styles'
 import {defaultTheme} from './themes/defaultTheme';
 import {ThemeProvider} from 'styled-components';
 
-function App() {
+function App({}) {
+
+
 
   return (
 

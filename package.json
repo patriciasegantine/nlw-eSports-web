@@ -9,10 +9,12 @@
     "lint": "eslint src --ext .ts --fix"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

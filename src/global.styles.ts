@@ -42,3 +42,16 @@ export const GlobalContainer = styled.main`
 `
 export const ContainerLogo = styled.div`
 `
+
+export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  
+  padding: .6rem 1rem ;
+  border: none;
+  border-radius: 6px;
+  
+  cursor: pointer;
+`
